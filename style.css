@@ -1,0 +1,30 @@
+body {
+  /* font-family: 'Lobster', sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-image {
+  background-image: url("./assets/cat-and-dogs-pet-show.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1 > strong {
+  border-bottom: 1px solid #dc8998;
+  color: #dc8998;
+  font-family: "Lobster", sans-serif;
+  font-size: 3.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+  .bg-image {
+    height: auto;
+  }
+}
