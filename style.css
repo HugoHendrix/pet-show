@@ -73,6 +73,18 @@ h2 > span {
   color: #dc8998;
 }
 
+/* DIVISOR DE TELA  */
+
+.curved {
+    position: relative;
+    background: #dc8998;
+    height: 14vh;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+  }
+
+  /* SEÇÃO NOSSO TIME */
+
 /* MEDIA QUERIES */
 
 @media (max-width: 767px) {
