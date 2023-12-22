@@ -23,6 +23,10 @@ h1 > strong {
   font-size: 3.5rem;
 }
 
+.descricao-boas-vindas {
+    font-size: 1.1rem;
+}
+
 /* DIVISOR DE TELA SPIKES 
     https://wweb.dev/resources/css-separator-generator
 */
@@ -63,8 +67,8 @@ h2 > span {
   border-bottom: 1px solid #ffffff;
 }
 
-.descricao-protudos {
-  font-size: 2rem;
+.descricao {
+  font-size: 1.5rem;
 }
 
 .icon {
