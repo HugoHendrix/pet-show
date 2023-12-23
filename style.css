@@ -87,7 +87,44 @@ h2 > span {
     border-bottom-right-radius: 50% 20%;
   }
 
-  /* SEÇÃO NOSSO TIME */
+/* SEÇÃO NOSSO TIME */
+
+/* CARROSSEL */
+
+/* SEÇÃO SOBRE BRINQUEDO PARA GATINHOS */
+.clip-path-container {
+    position: relative;
+    clip-path: polygon(13% 0, 100% 0%, 87% 100%, 0 100%);
+  }
+  
+  .selo {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: #dc8998; 
+    color: #fff; 
+    padding: 5px 10px; 
+    font-size: 1.2rem; 
+    border-radius: 5px; 
+  }
+
+  .btn-saiba-mais {
+    background-color: #dc8998;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #a56b77;
+    /* Cor um pouco mais escura ao passar o mouse */
+}
+  
+
+
 
 /* MEDIA QUERIES */
 
