@@ -122,7 +122,55 @@ h2 > span {
     background-color: #a56b77;
     /* Cor um pouco mais escura ao passar o mouse */
 }
-  
+
+
+/* SEÇÃO DEPOIMENTOS */
+
+.depoimentos-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #FEDD62;
+  }
+
+  .depoimentos-title {
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #F48B48;
+  }
+
+  .depoimentos-description {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #F48B48;
+  }
+
+  .depoimentos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .depoimento {
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .depoimento img {
+    width: 100%;
+    height: auto;
+    clip-path: circle(50% at 50% 50%);
+    border: 15px solid #F48B48; 
+
+  }
+
+  .depoimento p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+ 
 
 
 
