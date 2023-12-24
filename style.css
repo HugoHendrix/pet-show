@@ -24,7 +24,7 @@ h1 > strong {
 }
 
 .descricao-boas-vindas {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 /* DIVISOR DE TELA SPIKES 
@@ -80,12 +80,12 @@ h2 > span {
 /* DIVISOR DE TELA  */
 
 .curved {
-    position: relative;
-    background: #dc8998;
-    height: 14vh;
-    border-bottom-left-radius: 50% 20%;
-    border-bottom-right-radius: 50% 20%;
-  }
+  position: relative;
+  background: #dc8998;
+  height: 14vh;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
 
 /* SEÇÃO NOSSO TIME */
 
@@ -93,101 +93,126 @@ h2 > span {
 
 /* SEÇÃO SOBRE BRINQUEDO PARA GATINHOS */
 .clip-path-container {
-    position: relative;
-    clip-path: polygon(13% 0, 100% 0%, 87% 100%, 0 100%);
-  }
-  
-  .selo {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    background-color: #dc8998; 
-    color: #fff; 
-    padding: 5px 10px; 
-    font-size: 1.2rem; 
-    border-radius: 5px; 
-  }
+  position: relative;
+  clip-path: polygon(13% 0, 100% 0%, 87% 100%, 0 100%);
+}
 
-  .btn-saiba-mais {
-    background-color: #dc8998;
-    color: #ffffff;
-    border: none;
-    padding: 14px 24px;
-    border-radius: 5px;
-    font-size: 1.3rem;
-    cursor: pointer;
+.selo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc8998;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.btn-saiba-mais {
+  background-color: #dc8998;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .btn-saiba-mais:hover {
-    background-color: #a56b77;
-    /* Cor um pouco mais escura ao passar o mouse */
+  background-color: #a56b77;
+  /* Cor um pouco mais escura ao passar o mouse */
 }
-
 
 /* SEÇÃO DEPOIMENTOS */
 
 .depoimentos-section {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #FEDD62;
-  }
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fedd62;
+}
 
-  .depoimentos-title {
-    font-size: 3.4rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #F48B48;
-  }
+.depoimentos-title {
+  font-size: 3.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f48b48;
+}
 
-  .depoimentos-description {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    color: #F48B48;
-  }
+.depoimentos-description {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #f48b48;
+}
 
-  .depoimentos-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+.depoimentos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.depoimento img {
+  width: 100%;
+  height: auto;
+  clip-path: circle(50% at 50% 50%);
+  border: 15px solid #f48b48;
+}
 
-  .depoimento img {
-    width: 100%;
-    height: auto;
-    clip-path: circle(50% at 50% 50%);
-    border: 15px solid #F48B48; 
+.depoimento p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
 
-  }
-
-  .depoimento p {
-    margin-top: 10px;
-    font-size: 1rem;
-  }
- 
 /* SEÇÃO SOBRE NÓS */
 
 .semicircle {
-    position: relative;
-    background: #FEDD62;
-    height: 5vh;
-    margin-bottom: 25px;
-  }
-  
-  .semicircle::before {
-    position: absolute;
-    content: '';
-    left: 50%;
-    z-index: 10;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: inherit;
-    transform: translateX(-50%) translateY(50%);
-    bottom: 0px;
-  }
+  position: relative;
+  background: #fedd62;
+  height: 5vh;
+  margin-bottom: 25px;
+}
 
+.semicircle::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: inherit;
+  transform: translateX(-50%) translateY(50%);
+  bottom: 0px;
+}
+
+/* SEÇÃO GALERIA DE FOTOS */
+.bg-galeria {
+  background-color: #ff9655;
+}
+
+.galeria-title {
+  color: #fedd62;
+  font-size: 4.5rem;
+}
+
+.triangle {
+  position: relative;
+  background: #ff9655;
+  height: 1vh;
+}
+
+.triangle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: #ff9655 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
 
 /* MEDIA QUERIES */
 
