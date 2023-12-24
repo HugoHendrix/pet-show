@@ -152,11 +152,6 @@ h2 > span {
     flex-wrap: wrap;
   }
 
-  .depoimento {
-    width: 30%;
-    margin: 10px;
-    overflow: hidden;
-  }
 
   .depoimento img {
     width: 100%;
@@ -171,7 +166,27 @@ h2 > span {
     font-size: 1rem;
   }
  
+/* SEÇÃO SOBRE NÓS */
 
+.semicircle {
+    position: relative;
+    background: #FEDD62;
+    height: 5vh;
+    margin-bottom: 25px;
+  }
+  
+  .semicircle::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: inherit;
+    transform: translateX(-50%) translateY(50%);
+    bottom: 0px;
+  }
 
 
 /* MEDIA QUERIES */
