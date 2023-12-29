@@ -214,6 +214,50 @@ h2 > span {
   transform: translateX(-50%) translateY(100%);
 }
 
+/* SEÇÃO CONTATO */
+
+.btn-enviar-mensagem {
+  background-color: #ff9655;
+  border: 1px solid #f48b48; /* Adicionei a propriedade 'border' para manter a borda */
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.btn-enviar-mensagem:hover,
+.btn-enviar-mensagem:focus {
+  background-color: #fedd62;
+}
+
+.btn-enviar-mensagem:active {
+  background-color: #ff9655;
+}
+
+
+/* FOOTER  */
+
+footer {
+  background-color: #DDF1CF;
+}
+
+/* Estilo para ícones das redes sociais */
+a {
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 2em; 
+  margin-right: 10px; 
+  color: #555; 
+  transition: color 0.3s ease; 
+}
+
+/* Estilo ao passar o mouse sobre os ícones */
+.social-icons i:hover {
+  color: #3b8a98; /* Cor alterada ao passar o mouse (azul do Facebook como exemplo) */
+}
+
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 767px) {
