@@ -17,21 +17,23 @@ body {
 
 /* Efeito de hover suave nos links */
 .navbar-nav .nav-link:hover {
-  color: #dc8998; 
-  border-bottom: 1px solid #dc8998;
-    /* Cor do texto e borda inferior ao passar o mouse */
+  color: #dc8998;
+  /* Cor do texto ao passar o mouse */
 
 }
 
 /* Ocultar o ícone por padrão dos links de navegação*/
 .nav-item .fi {
-  opacity: 0;  /* Opacidade inicial */
-  transition: opacity 0.3s ease;  /* Transição suave para a opacidade */
+  opacity: 0;
+  /* Opacidade inicial */
+  transition: opacity 0.3s ease;
+  /* Transição suave para a opacidade */
 }
 
 /* Exibir o ícone quando o item de navegação está em estado de hover */
 .nav-item:hover .fi {
-  opacity: 1;  /* Opacidade ao passar o mouse */
+  opacity: 1;
+  /* Opacidade ao passar o mouse */
 }
 
 /* SEÇÃO DE BOAS VINDAS */
@@ -92,14 +94,39 @@ h1>strong {
 h2 {
   font-size: 4rem;
   font-family: "Lobster", sans-serif;
+  position: relative;
+  /* Adicionado para posicionar o pseudo-elemento */
 }
 
 h2>span {
   border-bottom: 1px solid #ffffff;
+  position: relative;
+  display: inline-block;
+  /* Adicionado para o pseudo-elemento ocupar apenas o tamanho do texto */
 }
 
+/* Adiciona um pseudo-elemento ao h2 para a animação */
+h2>span::after {
+  content: "";
+  /* Necessário para criar um pseudo-elemento */
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #ffffff;
+  transition: width 0.3s ease-out, left 0.3s ease-out;
+}
+
+/* Adiciona a animação ao passar o mouse sobre o h2 */
+h2:hover>span::after {
+  width: 100%;
+  left: 0;
+}
+
+
 .descricao {
-  font-size: 1.5rem;
+  font-size: .9rem;
 }
 
 .icon {
@@ -118,9 +145,34 @@ h2>span {
   border-bottom-right-radius: 50% 20%;
 }
 
-/* SEÇÃO NOSSO TIME */
+/* BOTÃO DE VOLTAR AO TOPO */
 
-/* CARROSSEL */
+#btn-voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF; /* Cor de fundo do botão */
+  color: #fff; /* Cor do ícone */
+  border: none;
+  border-radius: 50%; /* Para dar a forma de círculo */
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Valor alto para garantir que fique acima de outros elementos */
+}
+
+#btn-voltar-topo:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
+/* SEÇÃO DE EQUIPE ESPECIALIZADA */
+
+.text-responsive {
+  font-size: 3rem;
+}
+
 
 /* SEÇÃO SOBRE BRINQUEDO PARA GATINHOS */
 .clip-path-container {
@@ -163,14 +215,14 @@ h2>span {
 }
 
 .depoimentos-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
   color: #f48b48;
 }
 
 .depoimentos-description {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-bottom: 40px;
   color: #f48b48;
 }
@@ -223,7 +275,7 @@ h2>span {
 
 .galeria-title {
   color: #fedd62;
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 
 .triangle {
@@ -293,17 +345,33 @@ a {
 /* ANIMAÇÕES */
 
 .fade-animation {
-  opacity: 0; /* Inicialmente, a seção estará invisível */
-  animation: fadeIn 2s ease-in-out forwards; /* Animação de fade-in com duração de 2 segundos */
+  opacity: 0;
+  /* Inicialmente, a seção estará invisível */
+  animation: fadeIn 2s ease-in-out forwards;
+  /* Animação de fade-in com duração de 2 segundos */
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
+    opacity: 0;
   }
+
   to {
-      opacity: 1;
+    opacity: 1;
   }
+}
+
+/* CARTÕES DOS PRODUTOS E DA EQUIPE ESPECIALIZADA */
+.card {
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #a56b77;
+  /* Adapte a cor da borda conforme necessário */
+  transform: scale(1.05);
+  /* Ajuste o valor conforme necessário para a escala desejada */
 }
 
 
@@ -313,5 +381,19 @@ a {
 @media (max-width: 767px) {
   .bg-image {
     height: auto;
+  }
+}
+
+/* Ocultar o botão em dispositivos com largura de tela menor que 768 pixels (móveis) */
+@media only screen and (max-width: 767px) {
+  #btn-voltar-topo {
+      display: none;
+  }
+}
+
+/* Exibir o conteúdo abaixo apenas em telas maiores que 444px */
+@media only screen and (max-width: 443px) {
+  .col-md-6 {
+      display: none;
   }
 }
