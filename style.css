@@ -1,21 +1,39 @@
 body {
-  /* font-family: 'Lobster', sans-serif; */
+  /* font-family: 'Lobster', sans-serif;  */
   font-family: "Poppins", sans-serif;
 }
 
 /* HEADER  */
 
-   /* Estilo dos links na barra de navegação */
-   .navbar-nav .nav-link {
-    font-size: 1.3rem; /* Tamanho do texto */
-    padding: 10px 15px; /* Espaçamento interno */
-    transition: color 0.3s ease; /* Efeito de transição de cor suave */
+/* Estilo dos links na barra de navegação */
+.navbar-nav .nav-link {
+  font-size: 1.3rem;
+  /* Tamanho do texto */
+  padding: 10px 15px;
+  /* Espaçamento interno */
+  transition: color 0.3s ease;
+  /* Efeito de transição de cor suave */
 }
 
 /* Efeito de hover suave nos links */
 .navbar-nav .nav-link:hover {
-    color: #007bff; /* Cor do texto ao passar o mouse */
+  color: #dc8998; 
+  border-bottom: 1px solid #dc8998;
+    /* Cor do texto e borda inferior ao passar o mouse */
+
 }
+
+/* Ocultar o ícone por padrão dos links de navegação*/
+.nav-item .fi {
+  opacity: 0;  /* Opacidade inicial */
+  transition: opacity 0.3s ease;  /* Transição suave para a opacidade */
+}
+
+/* Exibir o ícone quando o item de navegação está em estado de hover */
+.nav-item:hover .fi {
+  opacity: 1;  /* Opacidade ao passar o mouse */
+}
+
 /* SEÇÃO DE BOAS VINDAS */
 
 .bg-image {
@@ -29,7 +47,7 @@ h1 {
   font-size: 3rem;
 }
 
-h1 > strong {
+h1>strong {
   border-bottom: 1px solid #dc8998;
   color: #dc8998;
   font-family: "Lobster", sans-serif;
@@ -76,7 +94,7 @@ h2 {
   font-family: "Lobster", sans-serif;
 }
 
-h2 > span {
+h2>span {
   border-bottom: 1px solid #ffffff;
 }
 
@@ -231,7 +249,8 @@ h2 > span {
 
 .btn-enviar-mensagem {
   background-color: #ff9655;
-  border: 1px solid #f48b48; /* Adicionei a propriedade 'border' para manter a borda */
+  border: 1px solid #f48b48;
+  /* Adicionei a propriedade 'border' para manter a borda */
   font-size: 1.2rem;
   color: #fff;
 }
@@ -258,15 +277,33 @@ a {
 }
 
 .social-icons i {
-  font-size: 2em; 
-  margin-right: 10px; 
-  color: #555; 
-  transition: color 0.3s ease; 
+  font-size: 2em;
+  margin-right: 10px;
+  color: #555;
+  transition: color 0.3s ease;
 }
 
 /* Estilo ao passar o mouse sobre os ícones */
 .social-icons i:hover {
-  color: #3b8a98; /* Cor alterada ao passar o mouse (azul do Facebook como exemplo) */
+  color: #3b8a98;
+  /* Cor alterada ao passar o mouse (azul do Facebook como exemplo) */
+}
+
+
+/* ANIMAÇÕES */
+
+.fade-animation {
+  opacity: 0; /* Inicialmente, a seção estará invisível */
+  animation: fadeIn 2s ease-in-out forwards; /* Animação de fade-in com duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 

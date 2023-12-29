@@ -1,7 +1,4 @@
-function scrollToSection(sectionId) {
-    const targetSection = document.querySelector(sectionId);
-    window.scrollTo({
-        top: targetSection.offsetTop - 56, // Ajuste conforme necessário para acomodar a barra de navegação
-        behavior: 'smooth'
-    });
-}
+document.addEventListener('DOMContentLoaded', function () {
+    // Aguarde o carregamento do DOM antes de aplicar a classe que inicia a animação
+    document.querySelector('.welcome-section').classList.add('fade-in');
+});
