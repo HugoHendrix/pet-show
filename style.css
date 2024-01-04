@@ -155,8 +155,8 @@ h2:hover>span::after {
   color: #fff; /* Cor do ícone */
   border: none;
   border-radius: 50%; /* Para dar a forma de círculo */
-  padding: 10px;
-  font-size: 20px;
+  padding: 12px;
+  font-size: 3rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 1000; /* Valor alto para garantir que fique acima de outros elementos */
@@ -385,7 +385,7 @@ a {
 }
 
 /* Ocultar o botão em dispositivos com largura de tela menor que 768 pixels (móveis) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 500px) {
   #btn-voltar-topo {
       display: none;
   }
